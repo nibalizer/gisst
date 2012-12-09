@@ -61,6 +61,10 @@ initialize (){
   
 }
 
+clean (){
+  echo "Clean it manually, ya big lug."
+}
+
 
 
 if [ -z $GISSTDIR ]; then
@@ -77,6 +81,9 @@ fi
 if [ $target = "init" ]; then
   echo "Initializing gist..."
   initialize
+elif [ $target = "clean" ]; then
+  echo "cleaning gists"
+  clean
 else
   if [ ! -d $GISSTDIR ]; then
     echo "Gissdir: $GISTDIR not found... have you run gisst init yet?"
