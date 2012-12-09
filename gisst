@@ -81,21 +81,22 @@ else
   if [ ! -d $GISSTDIR ]; then
     echo "Gissdir: $GISTDIR not found... have you run gisst init yet?"
   fi
-  branchname="`basename $target`-$RANDOM"
+  # the sed is for chars a branch name cant start with
+  branchname="`basename $target | sed 's/^[\.\/]/_/'`-$RANDOM"
   filename=`basename $target`
-  pushd $GISSTDIR 
+  pushd $GISSTDIR  > /dev/null
   echo $GISSTDIR
   pwd
   git checkout -b "$branchname"
-  popd
+  popd > /dev/null
   cp $target $GISSTDIR
-  pushd $GISSTDIR 
+  pushd $GISSTDIR  > /dev/null
   git add $filename
   git commit -m "$branchname" 1>2 2>/dev/null
   git push origin $branchname
   git checkout master
   github_user=` git remote -v | head -n 1 | cut -d ":" -f 2 | cut -d "/" -f 1`
-  popd
+  popd > /dev/null
   #https://raw.github.com/nibalizer/gisst/battery_warn.sh-29069/battery_warn.sh
   rawlink="https://raw.github.com/$github_user/gisst/$branchname/$filename"
   bloblink="https://github.com/$github_user/gisst/blob/$branchname/$filename"
@@ -104,7 +105,7 @@ else
   echo "Raw: $rawlink"
   echo "Blob(with syntax highlighting: $bloblink"
 
-  #http://tinyurl.com/api-create.php?url=http://scripting.com/ 
+  echo #http://tinyurl.com/api-create.php?url=http://scripting.com/ 
 
 
 
