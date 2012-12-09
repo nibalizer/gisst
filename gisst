@@ -85,25 +85,26 @@ else
   branchname="`basename $target | sed 's/^[\.\/]/_/'`-$RANDOM"
   filename=`basename $target`
   pushd $GISSTDIR  > /dev/null
-  git checkout -b "$branchname"
+  git checkout -b "$branchname" 2>1 > /dev/null
   popd > /dev/null
   cp $target $GISSTDIR
   pushd $GISSTDIR  > /dev/null
-  git add $filename
+  git add $filename > /dev/null
   git commit -m "$branchname" 1>2 2>/dev/null
   git push origin $branchname
-  git checkout master
+  git checkout master > /dev/null
   github_user=` git remote -v | head -n 1 | cut -d ":" -f 2 | cut -d "/" -f 1`
   popd > /dev/null
-  #https://raw.github.com/nibalizer/gisst/battery_warn.sh-29069/battery_warn.sh
-  rawlink="https://raw.github.com/$github_user/gisst/$branchname/$filename"
-  bloblink="https://github.com/$github_user/gisst/blob/$branchname/$filename"
-  
-  echo "File is at:"
-  echo "Raw: $rawlink"
-  echo "Blob(with syntax highlighting: $bloblink"
 
-  echo #http://tinyurl.com/api-create.php?url=http://scripting.com/ 
+  raw_link="https://raw.github.com/$github_user/gisst/$branchname/$filename"
+  blob_link="https://github.com/$github_user/gisst/blob/$branchname/$filename"
+  
+
+  blob_short_link=`curl http://tinyurl.com/api-create.php?url="$blob_link" 2> /dev/null`
+  raw_short_link=`curl http://tinyurl.com/api-create.php?url="$raw_link" 2> /dev/null`
+
+  echo "Raw: $raw_short_link"
+  echo "Blob: $blob_short_link"
 
 fi
 
