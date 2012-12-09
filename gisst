@@ -63,6 +63,14 @@ initialize (){
 
 clean (){
   echo "Clean it manually, ya big lug."
+  #for i in `git branch --all | grep -v  master | cut -d "/" -f 3`
+  #do git push origin :$i
+  #done
+}
+
+list (){
+  #git branch --all | grep -v master | cut -d "/" -f 3
+  #getting date created or first few words would be a pita
 }
 
 
@@ -81,9 +89,12 @@ fi
 if [ $target = "init" ]; then
   echo "Initializing gist..."
   initialize
-elif [ $target = "clean" ]; then
-  echo "cleaning gists"
-  clean
+#elif [ $target = "clean" ]; then
+#  echo "cleaning gists"
+#  clean
+#elif [ $target = "list" ]; then
+#  echo "listing gists"
+#  list 
 else
   if [ ! -d $GISSTDIR ]; then
     echo "Gissdir: $GISTDIR not found... have you run gisst init yet?"
