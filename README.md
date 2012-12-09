@@ -3,9 +3,11 @@ gisst
 
 gist hack for ssh keys
 
-#Copyright (c) 2012, Spencer Krum
-#All rights reserved.
-#Released under the BSD License
+Copyright (c) 2012, Spencer Krum
+
+All rights reserved.
+
+Released under the BSD License
 
  Gisst aims to replace all the bad gist command line utilites
  Basic strategy is to have one 'gisst' repository in your github 
@@ -29,8 +31,11 @@ usage
 =====
 
 
-  usage: gisst init"
-  sets up gisst environment"
-  usage: gisst <filename>"
-  pushes file to github and prints out a link to it"
+ usage: gisst init"
+
+ sets up gisst environment"
+
+ usage: gisst <filename>"
+
+ pushes file to github and prints out a link to it"
 
