@@ -69,6 +69,7 @@ clean (){
 }
 
 list (){
+  :
   #git branch --all | grep -v master | cut -d "/" -f 3
   #getting date created or first few words would be a pita
 }
