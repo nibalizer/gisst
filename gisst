@@ -85,8 +85,6 @@ else
   branchname="`basename $target | sed 's/^[\.\/]/_/'`-$RANDOM"
   filename=`basename $target`
   pushd $GISSTDIR  > /dev/null
-  echo $GISSTDIR
-  pwd
   git checkout -b "$branchname"
   popd > /dev/null
   cp $target $GISSTDIR
@@ -106,8 +104,6 @@ else
   echo "Blob(with syntax highlighting: $bloblink"
 
   echo #http://tinyurl.com/api-create.php?url=http://scripting.com/ 
-
-
 
 fi
 
