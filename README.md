@@ -31,7 +31,7 @@ Usage
 
 2. Post a file, receive links
 
-      $ gisst <filename>
+      $ gisst \<filename\>
 
 
 License
