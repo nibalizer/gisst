@@ -92,7 +92,7 @@ else
   git add $filename > /dev/null
   git commit -m "$branchname" 1>2 2>/dev/null
   git push origin $branchname 2>1 > /dev/null
-  git checkout master 2> /dev/null
+  git checkout master 2>1 > /dev/null
   github_user=` git remote -v | head -n 1 | cut -d ":" -f 2 | cut -d "/" -f 1`
   popd > /dev/null
 
