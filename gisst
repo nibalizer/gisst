@@ -82,14 +82,14 @@ else
     echo "Gissdir: $GISTDIR not found... have you run gisst init yet?"
   fi
   pushd $GISSTDIR 
-  targetname="$target-$RANDOM"
+  targetname="`basename $target`-$RANDOM"
   echo $GISSTDIR
   pwd
   git checkout -b "$targetname"
   popd
   cp $target $GISSTDIR
   pushd $GISSTDIR 
-  git add $target
+  git add `basename $target`
   git commit -m "$targetname"
   git push origin $targetname
   git checkout master
