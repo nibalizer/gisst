@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+
+#Copyright (c) 2012, Spencer Krum
+#All rights reserved.
+
+#Redistribution and use in source and binary forms, with or without modificatio
+#n, are permitted provided that the following conditions are met:
+#
+#Redistributions of source code must retain the above copyright notice, this li
+#st of conditions and the following disclaimer.
+#Redistributions in binary form must reproduce the above copyright notice, this
+# list of conditions and the following disclaimer in the documentation and/or ot
+#her materials provided with the distribution.
+#
+#THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AN
+#D ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAI
+#MED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY D
+#IRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCL
+#UDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+# USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THE
+#ORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEG
+#LIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN 
+#IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+# gisst aims to replace all the bad gist command line utilites
+# basic strategy is to have one 'gist' repository in your github 
+# this script is in the master branch of that repository
+# when called with a file argument it will checkout a new branch of
+# the gist repo, copy in the argument, add, commit, push, and print 
+# a link to the file on github
+
+# this removes the need to have an api token or password written to
+# a file in your homedirectory. All comm with github is done over ssh
+
+# requires ssh, git, and ssh keys set up with github
+# also requires a repo on your github named gisst, init will only
+# work if you are running from a local clone of a repository you have
+# readwrite to
+
+
+usage (){
+  echo "usage: gisst init"
+  echo "sets up gisst environment"
+  echo "usage: gisst <filename>"
+  echo "pushes file to github and prints out a link to it"
+}
+
+
+initialize (){
+  if [ -e $GISSTDIR ]; then
+    echo "$GISSTDIR already created"
+    exit 0
+  fi
+  mkdir $GISSTDIR
+  cp -r . .git $GISSTDIR 2> /dev/null
+  echo "gisst has been setup"
+  echo "try it out with gisst <fileename>"
+  
+}
+
+
+
+if [ -z $GISSTDIR ]; then
+  GISSTDIR=$HOME/.gisst
+fi
+target=$1
+
+if [ -z $target ];then
+  echo "Error: no argument specified"
+  usage
+  exit 1
+fi
+
+if [ $target = "init" ]; then
+  echo "Initializing gist..."
+  initialize
+else
+  if [ ! -d $GISSTDIR ]; then
+    echo "Gissdir: $GISTDIR not found... have you run gisst init yet?"
+  fi
+  pushd $GISSTDIR 
+  targetname="$target-$RANDOM"
+  echo $GISSTDIR
+  pwd
+  git checkout -b "$targetname"
+  popd
+  cp $target $GISSTDIR
+  pushd $GISSTDIR 
+  git add $target
+  git commit -m "$targetname"
+  git push origin $targetname
+  git checkout master
+  popd
+
+fi
+
+
