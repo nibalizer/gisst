@@ -31,11 +31,7 @@ usage
 =====
 
 
- usage: gisst init"
+ $ gisst init"
 
- sets up gisst environment"
-
- usage: gisst <filename>"
-
- pushes file to github and prints out a link to it"
+ $ gisst <filename>"
 
