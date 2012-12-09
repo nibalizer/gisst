@@ -98,7 +98,8 @@ if [ $target = "init" ]; then
 #  list 
 else
   if [ ! -d $GISSTDIR ]; then
-    echo "Gissdir: $GISTDIR not found... have you run gisst init yet?"
+    echo "Gisstdir: $GISTDIR not found... have you run gisst init yet?"
+    exit 1
   fi
   # the sed is for chars a branch name cant start with
   branchname="`basename $target | sed 's/^[\.\/]/_/'`-$RANDOM"
