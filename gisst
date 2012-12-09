@@ -81,19 +81,32 @@ else
   if [ ! -d $GISSTDIR ]; then
     echo "Gissdir: $GISTDIR not found... have you run gisst init yet?"
   fi
+  branchname="`basename $target`-$RANDOM"
+  filename=`basename $target`
   pushd $GISSTDIR 
-  targetname="`basename $target`-$RANDOM"
   echo $GISSTDIR
   pwd
-  git checkout -b "$targetname"
+  git checkout -b "$branchname"
   popd
   cp $target $GISSTDIR
   pushd $GISSTDIR 
-  git add `basename $target`
-  git commit -m "$targetname"
-  git push origin $targetname
+  git add $filename
+  git commit -m "$branchname" 1>2 2>/dev/null
+  git push origin $branchname
   git checkout master
+  github_user=` git remote -v | head -n 1 | cut -d ":" -f 2 | cut -d "/" -f 1`
   popd
+  #https://raw.github.com/nibalizer/gisst/battery_warn.sh-29069/battery_warn.sh
+  rawlink="https://raw.github.com/$github_user/gisst/$branchname/$filename"
+  bloblink="https://github.com/$github_user/gisst/blob/$branchname/$filename"
+  
+  echo "File is at:"
+  echo "Raw: $rawlink"
+  echo "Blob(with syntax highlighting: $bloblink"
+
+  #http://tinyurl.com/api-create.php?url=http://scripting.com/ 
+
+
 
 fi
 
