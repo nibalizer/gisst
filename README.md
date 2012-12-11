@@ -22,14 +22,30 @@ gist hack for ssh keys
  By default it uses $HOME/.gisst but looks for the GISSTDIR env 
  variable if you want to change that
 
-Usage
+Installation/Usage
 =====
 
-1. Initialize the gisst env
+1. Fork the project to your github(required)*
+
+
+2. Clone the repository
+
+      $ git clone git@github.com:yourusername/gisst
+
+3. cd into the repo root
+
+      $ cd gisst
+    
+
+4. Initialize the gisst env
     
       $ gisst init 
 
-2. Post a file, receive links
+5. Copy the gisst script to your path e.g.
+
+      $ cp gisst ~/bin
+
+6. Post a file, receive links
 
       $ gisst \<filename\>
 
@@ -42,3 +58,6 @@ Copyright (c) 2012, Spencer Krum
 All rights reserved.
 
 Released under the BSD License
+
+
+* If you don't want to fork it, you can clone the repository, create a gisst repo, add the new repo as a remote, and push to it(or even copy the files in). gisst parses the remote of the git repo to find your username and provide you tasty links and requires write access to a repository to push files to.
