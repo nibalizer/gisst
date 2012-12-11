@@ -1,0 +1,28 @@
+chronoboost# ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*GPS_NMEA(1)     .GPS.            0 l   11   16  215    0.000  -111.45 138.454
+chronoboost# ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*GPS_NMEA(1)     .GPS.            0 l   11   16  215    0.000  -111.45 138.454
+chronoboost# ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*GPS_NMEA(1)     .GPS.            0 l   12   16  215    0.000  -111.45 138.454
+chronoboost# ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*GPS_NMEA(1)     .GPS.            0 l   12   16  215    0.000  -111.45 138.454
+chronoboost# ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*GPS_NMEA(1)     .GPS.            0 l   13   16  215    0.000  -111.45 138.454
+chronoboost# ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*GPS_NMEA(1)     .GPS.            0 l   13   16  215    0.000  -111.45 138.454
+chronoboost# ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*GPS_NMEA(1)     .GPS.            0 l   14   16  215    0.000  -111.45 138.454
