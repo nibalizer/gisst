@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 #this algorithm reverse engineered from 
 #http://www.stoacademy.com/tools/stardate.php
-
+#
+# python program to convert between stardate and current date
+# also explores the stardate conversion algorithm with graphs!
 import datetime
 import time
 
