@@ -1,0 +1,283 @@
+3076:   /usr/sbin/slapd -h ldap:/// ldapi:/// -g openldap -u openldap -F /etc/ldap/slapd.d
+Address           Kbytes     RSS   Dirty Mode   Mapping
+00007f53e4000000       0   25052   25052 rw---    [ anon ]
+00007f53e5958000       0       0       0 -----    [ anon ]
+00007f53ec000000       0   25732   25732 rw---    [ anon ]
+00007f53ed92e000       0       0       0 -----    [ anon ]
+00007f53f4000000       0   52048   52048 rw---    [ anon ]
+00007f53f72d7000       0       0       0 -----    [ anon ]
+00007f53fc000000       0   65536   65536 rw---    [ anon ]
+00007f5400000000       0   65528   65528 rw---    [ anon ]
+00007f5404000000       0   65536   65536 rw---    [ anon ]
+00007f5408000000       0   65536   65536 rw---    [ anon ]
+00007f540c000000       0   65536   65536 rw---    [ anon ]
+00007f5410000000       0   65536   65536 rw---    [ anon ]
+00007f5414000000       0   65536   65536 rw---    [ anon ]
+00007f5418000000       0   65536   65536 rw---    [ anon ]
+00007f541c000000       0   65536   65536 rw---    [ anon ]
+00007f5420000000       0   65536   65536 rw---    [ anon ]
+00007f5424000000       0   65536   65536 rw---    [ anon ]
+00007f5428000000       0   65536   65536 rw---    [ anon ]
+00007f542c000000       0   65536   65536 rw---    [ anon ]
+00007f5430000000       0   65536   65536 rw---    [ anon ]
+00007f5434000000       0   65536   65536 rw---    [ anon ]
+00007f5438000000       0   65536   65536 rw---    [ anon ]
+00007f543c000000       0   65536   65536 rw---    [ anon ]
+00007f5440000000       0   65536   65536 rw---    [ anon ]
+00007f5444000000       0   65536   65536 rw---    [ anon ]
+00007f5448000000       0   65536   65536 rw---    [ anon ]
+00007f544c000000       0   65536   65536 rw---    [ anon ]
+00007f5450000000       0   65536   65536 rw---    [ anon ]
+00007f5454000000       0   65536   65536 rw---    [ anon ]
+00007f5458000000       0   65536   65536 rw---    [ anon ]
+00007f545c000000       0   65536   65536 rw---    [ anon ]
+00007f5460000000       0   65536   65536 rw---    [ anon ]
+00007f5464000000       0  131072  131072 rw---    [ anon ]
+00007f546c000000       0   65536   65536 rw---    [ anon ]
+00007f5474000000       0   65536   65536 rw---    [ anon ]
+00007f547c000000       0   65536   65536 rw---    [ anon ]
+00007f5480000000       0   65536   65536 rw---    [ anon ]
+00007f5484000000       0   65536   65536 rw---    [ anon ]
+00007f5488000000       0   65536   65536 rw---    [ anon ]
+00007f548c000000       0   65528   65528 rw---    [ anon ]
+00007f548fffe000       0       0       0 -----    [ anon ]
+00007f5490000000       0   65536   65536 rw---    [ anon ]
+00007f5494000000       0   65536   65536 rw---    [ anon ]
+00007f5498000000       0   65536   65536 rw---    [ anon ]
+00007f549c000000       0   65536   65536 rw---    [ anon ]
+00007f54a0000000       0   65536   65536 rw---    [ anon ]
+00007f54a4000000       0   65536   65536 rw---    [ anon ]
+00007f54a8000000       0   65536   65536 rw---    [ anon ]
+00007f54ac000000       0   65536   65536 rw---    [ anon ]
+00007f54b0000000       0   65536   65536 rw---    [ anon ]
+00007f54b4000000       0   65536   65536 rw---    [ anon ]
+00007f54b8000000       0   65536   65536 rw---    [ anon ]
+00007f54bc000000       0   65536   65536 rw---    [ anon ]
+00007f54c0000000       0   65524   65524 rw---    [ anon ]
+00007f54c4000000       0   65536   65536 rw---    [ anon ]
+00007f54c87fc000       0    3360    3360 rw---    [ anon ]
+00007f54cb7ff000       0       0       0 -----    [ anon ]
+00007f54cb800000       0     588     588 rw---    [ anon ]
+00007f54cc000000       0     740     740 rw---    [ anon ]
+00007f54cc0b9000       0       0       0 -----    [ anon ]
+00007f54d0662000       0       0       0 -----    [ anon ]
+00007f54d0663000       0     588     588 rw---    [ anon ]
+00007f54d0e63000       0       0       0 -----    [ anon ]
+00007f54d0e64000       0     588     588 rw---    [ anon ]
+00007f54d1664000       0       4       0 rw-s-  __db.006
+00007f54d166c000       0     484       0 rw-s-  __db.005
+00007f54d1732000       0       8       8 rw---    [ anon ]
+00007f54d2733000       0       0       0 -----    [ anon ]
+00007f54d2734000       0      12      12 rw---    [ anon ]
+00007f54d2f34000       0     780     512 rw-s-  __db.005
+00007f54d3070000       0    2568    2556 rw-s-  __db.003
+00007f54d32f2000       0      24       0 r-x--  accesslog-2.4.so.2.8.1
+00007f54d32fc000       0       0       0 -----  accesslog-2.4.so.2.8.1
+00007f54d34fc000       0       4       4 r----  accesslog-2.4.so.2.8.1
+00007f54d34fd000       0       4       4 rw---  accesslog-2.4.so.2.8.1
+00007f54d34fe000       0      32       0 r-x--  syncprov-2.4.so.2.8.1
+00007f54d350a000       0       0       0 -----  syncprov-2.4.so.2.8.1
+00007f54d3709000       0       4       4 r----  syncprov-2.4.so.2.8.1
+00007f54d370a000       0       4       4 rw---  syncprov-2.4.so.2.8.1
+00007f54d370b000       0     124       0 r-x--  back_hdb-2.4.so.2.8.1
+00007f54d3737000       0       0       0 -----  back_hdb-2.4.so.2.8.1
+00007f54d3937000       0       4       4 r----  back_hdb-2.4.so.2.8.1
+00007f54d3938000       0       4       4 rw---  back_hdb-2.4.so.2.8.1
+00007f54d3939000       0       4       4 rw---    [ anon ]
+00007f54d3951000       0       4       0 r-x--  libdigestmd5.so.2.0.25
+00007f54d395e000       0       0       0 -----  libdigestmd5.so.2.0.25
+00007f54d3b5d000       0       4       4 r----  libdigestmd5.so.2.0.25
+00007f54d3b5e000       0       4       4 rw---  libdigestmd5.so.2.0.25
+00007f54d3b5f000       0     636       0 r-x--  libdb-5.1.so
+00007f54d3ccb000       0       0       0 -----  libdb-5.1.so
+00007f54d3ecb000       0      24      24 r----  libdb-5.1.so
+00007f54d3ed1000       0       4       4 rw---  libdb-5.1.so
+00007f54d3ed2000       0       0       0 r-x--  libsasldb.so.2.0.25
+00007f54d3ed7000       0       0       0 -----  libsasldb.so.2.0.25
+00007f54d40d6000       0       4       4 r----  libsasldb.so.2.0.25
+00007f54d40d7000       0       4       4 rw---  libsasldb.so.2.0.25
+00007f54d40d8000       0       4       0 r-x--  libplain.so.2.0.25
+00007f54d40dc000       0       0       0 -----  libplain.so.2.0.25
+00007f54d42db000       0       4       4 r----  libplain.so.2.0.25
+00007f54d42dc000       0       4       4 rw---  libplain.so.2.0.25
+00007f54d42dd000       0       4       0 r-x--  libcrammd5.so.2.0.25
+00007f54d42e1000       0       0       0 -----  libcrammd5.so.2.0.25
+00007f54d44e1000       0       4       4 r----  libcrammd5.so.2.0.25
+00007f54d44e2000       0       4       4 rw---  libcrammd5.so.2.0.25
+00007f54d44e3000       0       4       0 r-x--  libanonymous.so.2.0.25
+00007f54d44e7000       0       0       0 -----  libanonymous.so.2.0.25
+00007f54d46e6000       0       4       4 r----  libanonymous.so.2.0.25
+00007f54d46e7000       0       4       4 rw---  libanonymous.so.2.0.25
+00007f54d46e8000       0       0       0 r-x--  libcrypto.so.1.0.0
+00007f54d4887000       0       0       0 -----  libcrypto.so.1.0.0
+00007f54d4a86000       0     108     108 r----  libcrypto.so.1.0.0
+00007f54d4aa1000       0      44      44 rw---  libcrypto.so.1.0.0
+00007f54d4aac000       0       4       4 rw---    [ anon ]
+00007f54d4ab0000       0       4       0 r-x--  libntlm.so.2.0.25
+00007f54d4ab8000       0       0       0 -----  libntlm.so.2.0.25
+00007f54d4cb7000       0       4       4 r----  libntlm.so.2.0.25
+00007f54d4cb8000       0       4       4 rw---  libntlm.so.2.0.25
+00007f54d4cb9000       0       4       0 r-x--  liblogin.so.2.0.25
+00007f54d4cbd000       0       0       0 -----  liblogin.so.2.0.25
+00007f54d4ebc000       0       4       4 r----  liblogin.so.2.0.25
+00007f54d4ebd000       0       4       4 rw---  liblogin.so.2.0.25
+00007f54d4ebe000       0       0       0 r-x--  libnss_files-2.15.so
+00007f54d4eca000       0       0       0 -----  libnss_files-2.15.so
+00007f54d50c9000       0       4       4 r----  libnss_files-2.15.so
+00007f54d50ca000       0       4       4 rw---  libnss_files-2.15.so
+00007f54d50cb000       0       0       0 r-x--  libsqlite3.so.0.8.6
+00007f54d5169000       0       0       0 -----  libsqlite3.so.0.8.6
+00007f54d5369000       0       8       8 r----  libsqlite3.so.0.8.6
+00007f54d536b000       0       8       8 rw---  libsqlite3.so.0.8.6
+00007f54d536d000       0       0       0 rw---    [ anon ]
+00007f54d536e000       0       0       0 r-x--  libhx509.so.5.0.0
+00007f54d53b3000       0       0       0 -----  libhx509.so.5.0.0
+00007f54d55b3000       0       8       8 r----  libhx509.so.5.0.0
+00007f54d55b5000       0       8       8 rw---  libhx509.so.5.0.0
+00007f54d55b7000       0       0       0 rw---    [ anon ]
+00007f54d55b8000       0       0       0 r-x--  libheimbase.so.1.0.0
+00007f54d55c6000       0       0       0 -----  libheimbase.so.1.0.0
+00007f54d57c5000       0       4       4 r----  libheimbase.so.1.0.0
+00007f54d57c6000       0       4       4 rw---  libheimbase.so.1.0.0
+00007f54d57c7000       0       0       0 r-x--  libwind.so.0.0.0
+00007f54d57ef000       0       0       0 -----  libwind.so.0.0.0
+00007f54d59ee000       0       4       4 r----  libwind.so.0.0.0
+00007f54d59ef000       0       4       4 rw---  libwind.so.0.0.0
+00007f54d59f0000       0       4       0 r-x--  libgpg-error.so.0.8.0
+00007f54d59f3000       0       0       0 -----  libgpg-error.so.0.8.0
+00007f54d5bf2000       0       4       4 r----  libgpg-error.so.0.8.0
+00007f54d5bf3000       0       4       4 rw---  libgpg-error.so.0.8.0
+00007f54d5bf4000       0      20       0 r-x--  libp11-kit.so.0.0.0
+00007f54d5c05000       0       0       0 -----  libp11-kit.so.0.0.0
+00007f54d5e04000       0       4       4 r----  libp11-kit.so.0.0.0
+00007f54d5e05000       0       4       4 rw---  libp11-kit.so.0.0.0
+00007f54d5e06000       0       0       0 r-x--  libz.so.1.2.3.4
+00007f54d5e1c000       0       0       0 -----  libz.so.1.2.3.4
+00007f54d601b000       0       4       4 r----  libz.so.1.2.3.4
+00007f54d601c000       0       4       4 rw---  libz.so.1.2.3.4
+00007f54d601d000       0       0       0 r-x--  libtasn1.so.3.1.12
+00007f54d602d000       0       0       0 -----  libtasn1.so.3.1.12
+00007f54d622c000       0       4       4 r----  libtasn1.so.3.1.12
+00007f54d622d000       0       4       4 rw---  libtasn1.so.3.1.12
+00007f54d622e000       0       0       0 r-x--  libroken.so.18.1.0
+00007f54d6242000       0       0       0 -----  libroken.so.18.1.0
+00007f54d6441000       0       4       4 r----  libroken.so.18.1.0
+00007f54d6442000       0       4       4 rw---  libroken.so.18.1.0
+00007f54d6443000       0       0       0 r-x--  libhcrypto.so.4.1.0
+00007f54d6474000       0       0       0 -----  libhcrypto.so.4.1.0
+00007f54d6674000       0       4       4 r----  libhcrypto.so.4.1.0
+00007f54d6675000       0       4       4 rw---  libhcrypto.so.4.1.0
+00007f54d6676000       0       0       0 rw---    [ anon ]
+00007f54d6677000       0       0       0 r-x--  libcom_err.so.2.1
+00007f54d667a000       0       0       0 -----  libcom_err.so.2.1
+00007f54d6879000       0       4       4 r----  libcom_err.so.2.1
+00007f54d687a000       0       4       4 rw---  libcom_err.so.2.1
+00007f54d687b000       0       0       0 r-x--  libasn1.so.8.0.0
+00007f54d6916000       0       0       0 -----  libasn1.so.8.0.0
+00007f54d6b15000       0       8       8 r----  libasn1.so.8.0.0
+00007f54d6b17000       0      16      16 rw---  libasn1.so.8.0.0
+00007f54d6b1b000       0       0       0 r-x--  libkrb5.so.26.0.0
+00007f54d6b9b000       0       0       0 -----  libkrb5.so.26.0.0
+00007f54d6d9b000       0       8       8 r----  libkrb5.so.26.0.0
+00007f54d6d9d000       0      16      16 rw---  libkrb5.so.26.0.0
+00007f54d6da1000       0       0       0 r-x--  libheimntlm.so.0.1.0
+00007f54d6da7000       0       0       0 -----  libheimntlm.so.0.1.0
+00007f54d6fa6000       0       4       4 r----  libheimntlm.so.0.1.0
+00007f54d6fa7000       0       4       4 rw---  libheimntlm.so.0.1.0
+00007f54d6fa8000       0       4       0 r-x--  libdl-2.15.so
+00007f54d6faa000       0       0       0 -----  libdl-2.15.so
+00007f54d71aa000       0       4       4 r----  libdl-2.15.so
+00007f54d71ab000       0       4       4 rw---  libdl-2.15.so
+00007f54d71ac000       0       4       0 r-x--  libnsl-2.15.so
+00007f54d71c3000       0       0       0 -----  libnsl-2.15.so
+00007f54d73c2000       0       4       4 r----  libnsl-2.15.so
+00007f54d73c3000       0       4       4 rw---  libnsl-2.15.so
+00007f54d73c4000       0       0       0 rw---    [ anon ]
+00007f54d73c6000       0     224       0 r-x--  libgcrypt.so.11.7.0
+00007f54d7440000       0       0       0 -----  libgcrypt.so.11.7.0
+00007f54d7640000       0       4       4 r----  libgcrypt.so.11.7.0
+00007f54d7641000       0      12      12 rw---  libgcrypt.so.11.7.0
+00007f54d7644000       0     240       0 r-x--  libgnutls.so.26.21.8
+00007f54d76f8000       0       0       0 -----  libgnutls.so.26.21.8
+00007f54d78f8000       0      24      24 r----  libgnutls.so.26.21.8
+00007f54d78fe000       0       4       4 rw---  libgnutls.so.26.21.8
+00007f54d78ff000       0       4       4 rw---    [ anon ]
+00007f54d7900000       0       4       0 r-x--  libgssapi.so.3.0.0
+00007f54d793a000       0       0       0 -----  libgssapi.so.3.0.0
+00007f54d7b3a000       0       4       4 r----  libgssapi.so.3.0.0
+00007f54d7b3b000       0      12      12 rw---  libgssapi.so.3.0.0
+00007f54d7b3e000       0       4       0 r-x--  libresolv-2.15.so
+00007f54d7b56000       0       0       0 -----  libresolv-2.15.so
+00007f54d7d56000       0       4       4 r----  libresolv-2.15.so
+00007f54d7d57000       0       4       4 rw---  libresolv-2.15.so
+00007f54d7d58000       0       0       0 rw---    [ anon ]
+00007f54d7d5a000       0     488       0 r-x--  libc-2.15.so
+00007f54d7f0f000       0       0       0 -----  libc-2.15.so
+00007f54d810e000       0      16      16 r----  libc-2.15.so
+00007f54d8112000       0       8       8 rw---  libc-2.15.so
+00007f54d8114000       0      20      20 rw---    [ anon ]
+00007f54d8119000       0      64       0 r-x--  libpthread-2.15.so
+00007f54d8131000       0       0       0 -----  libpthread-2.15.so
+00007f54d8330000       0       4       4 r----  libpthread-2.15.so
+00007f54d8331000       0       4       4 rw---  libpthread-2.15.so
+00007f54d8332000       0       4       4 rw---    [ anon ]
+00007f54d8336000       0      24       0 r-x--  libwrap.so.0.7.6
+00007f54d833e000       0       0       0 -----  libwrap.so.0.7.6
+00007f54d853d000       0       4       4 r----  libwrap.so.0.7.6
+00007f54d853e000       0       4       4 rw---  libwrap.so.0.7.6
+00007f54d853f000       0       4       0 r-x--  libltdl.so.7.3.0
+00007f54d8547000       0       0       0 -----  libltdl.so.7.3.0
+00007f54d8747000       0       4       4 r----  libltdl.so.7.3.0
+00007f54d8748000       0       4       4 rw---  libltdl.so.7.3.0
+00007f54d8749000       0       8       0 r-x--  libslapi-2.4.so.2.8.1
+00007f54d8766000       0       0       0 -----  libslapi-2.4.so.2.8.1
+00007f54d8965000       0       4       4 r----  libslapi-2.4.so.2.8.1
+00007f54d8966000       0       4       4 rw---  libslapi-2.4.so.2.8.1
+00007f54d8967000       0      24       0 r-x--  libcrypt-2.15.so
+00007f54d8970000       0       0       0 -----  libcrypt-2.15.so
+00007f54d8b70000       0       4       4 r----  libcrypt-2.15.so
+00007f54d8b71000       0       4       4 rw---  libcrypt-2.15.so
+00007f54d8b72000       0     184     184 rw---    [ anon ]
+00007f54d8ba0000       0      64       0 r-x--  libsasl2.so.2.0.25
+00007f54d8bba000       0       0       0 -----  libsasl2.so.2.0.25
+00007f54d8db9000       0       4       4 r----  libsasl2.so.2.0.25
+00007f54d8dba000       0       4       4 rw---  libsasl2.so.2.0.25
+00007f54d8dbb000       0       4       0 r-x--  libslp.so.1.0.1
+00007f54d8dcb000       0       0       0 -----  libslp.so.1.0.1
+00007f54d8fca000       0       4       4 r----  libslp.so.1.0.1
+00007f54d8fcb000       0       4       4 rw---  libslp.so.1.0.1
+00007f54d8fcc000       0      40       0 r-x--  liblber-2.4.so.2.8.1
+00007f54d8fd9000       0       0       0 -----  liblber-2.4.so.2.8.1
+00007f54d91d8000       0       4       4 r----  liblber-2.4.so.2.8.1
+00007f54d91d9000       0       4       4 rw---  liblber-2.4.so.2.8.1
+00007f54d91da000       0     104       0 r-x--  libldap_r-2.4.so.2.8.1
+00007f54d9225000       0       0       0 -----  libldap_r-2.4.so.2.8.1
+00007f54d9424000       0       8       8 r----  libldap_r-2.4.so.2.8.1
+00007f54d9426000       0       4       4 rw---  libldap_r-2.4.so.2.8.1
+00007f54d9427000       0       8       8 rw---    [ anon ]
+00007f54d9429000       0      48       0 r-x--  ld-2.15.so
+00007f54d949b000       0      28       0 rw-s-  __db.004
+00007f54d94c3000       0     264       0 rw-s-  __db.003
+00007f54d9505000       0     192       0 rw-s-  __db.002
+00007f54d9535000       0       4       0 rw-s-  __db.001
+00007f54d953b000       0       4       0 rw-s-  __db.006
+00007f54d9543000       0      24       0 rw-s-  __db.004
+00007f54d956b000       0     364     108 rw-s-  __db.002
+00007f54d95c7000       0       0       0 r--s-  group
+00007f54d95fc000       0       0       0 r--s-  passwd
+00007f54d9631000       0      60      60 rw---    [ anon ]
+00007f54d9643000       0       4       0 rw-s-  __db.001
+00007f54d9649000       0       8       8 rw---    [ anon ]
+00007f54d964b000       0       4       4 r----  ld-2.15.so
+00007f54d964c000       0       8       8 rw---  ld-2.15.so
+00007f54d964e000       0     536       0 r-x--  slapd
+00007f54d9976000       0      16      16 r----  slapd
+00007f54d997a000       0      24      24 rw---  slapd
+00007f54d9980000       0      12      12 rw---    [ anon ]
+00007f54d9fdb000       0    1080    1080 rw---    [ anon ]
+00007f54da0e9000       0    2488    2488 rw---    [ anon ]
+00007fff8fa44000       0      40      40 rw---    [ stack ]
+00007fff8fbe2000       0       4       0 r-x--    [ anon ]
+ffffffffff600000       0       0       0 r-x--    [ anon ]
+----------------  ------  ------  ------
+total kB         3684212 3332008 3327708
